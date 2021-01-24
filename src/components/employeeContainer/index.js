@@ -75,6 +75,7 @@ class EmployeeContainer extends Component {
               <tbody>
                 {[...this.state.employees].map((item) => (
                   <Card
+                    key={item.id.value}
                     picture={item.picture}
                     firstName={item.name.first}
                     lastName={item.name.last}

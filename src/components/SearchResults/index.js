@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import EmployeeContext from "../../utils/ArticleContext";
+import EmployeeContext from "../../utils/EmployeeContext";
 import "./style.css";
 
 function SearchResults() {

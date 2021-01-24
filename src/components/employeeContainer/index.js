@@ -74,7 +74,7 @@ class EmployeeContainer extends Component {
                 </tr>
               </thead>
               <tbody>
-                {[...this.state.employees].map((item) => (
+                {[...this.state.searchEmp].map((item) => (
                   <Card
                     key={item.id.value}
                     picture={item.picture}

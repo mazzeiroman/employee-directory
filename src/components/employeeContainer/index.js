@@ -10,6 +10,7 @@ import API from "../../utils/API.js";
 class EmployeeContainer extends Component {
   state = {
     employees: [],
+    searchEmp: [],
     search: ""
   };
 
@@ -31,9 +32,9 @@ class EmployeeContainer extends Component {
 
   handleInputChange = event => {
     const value = event.target.value;
-    const name = event.target.name;
+    const users = this.state.employees.filter(user => user.name.first.indexOf(value)>=0);
     this.setState({
-      [name]: value
+      searchEmp: users
     });
   };
 

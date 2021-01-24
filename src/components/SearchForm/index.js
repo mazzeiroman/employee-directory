@@ -16,6 +16,9 @@ function SearchForm(props) {
           placeholder="Type in a name to search"
           id="search"
         />
+        <button onClick={props.handleFormSubmit} className="btn btn-success">
+          Search 
+        </button>
       </div>
      </form>
   );
